@@ -3120,7 +3120,7 @@ def emit_cir_only : Flag<["-"], "emit-cir-only">,
 def emit_cir_flat : Flag<["-"], "emit-cir-flat">, Visibility<[ClangOption, CC1Option]>,
   Group<Action_Group>, HelpText<"Similar to -emit-cir but also lowers structured CFG into basic blocks.">;
 def emit_mlir : Flag<["-"], "emit-mlir">, Visibility<[CC1Option]>, Group<Action_Group>,
-  HelpText<"Build ASTs and then lower through ClangIR to MLIR, emit the .milr file">;
+  HelpText<"Build ASTs and then lower through ClangIR to MLIR standard dialects, emit the .mlir file">;
 /// ClangIR-specific options - END
 
 def flto : Flag<["-"], "flto">,
